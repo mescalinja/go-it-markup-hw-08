@@ -1,4 +1,5 @@
 .hero {
+
     margin-left: auto;
     margin-right: auto;
 
@@ -10,6 +11,10 @@
     background-position: center;
     background-size: cover;
 
+    @media screen and (min-width: 768px) {
+
+    }
+
 
     @media screen and (min-width:1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -17,6 +22,10 @@
     url(../images/hero-bg.jpg);
     max-width: 1600px;
     }
+}
+
+.hero__img {
+    
 }
 
 .hero.section {

@@ -1,15 +1,40 @@
 .products__nav {
     display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+
+    @media screen and (min-width: 768px) {
     justify-content: center;
     margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+    }
 }
 
 .products-nav__item {
     &:not(:last-child) {
         margin-right: 8px;
     }
-}
 
+    &:nth-child(-n+3) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:nth-child(-n+3) {
+            margin-bottom: 0;
+        }
+    }
+
+}
 .btn-nav {
     transition: background-color var(--transition-time) var(--cubic),
         color var(--transition-time) var(--cubic),

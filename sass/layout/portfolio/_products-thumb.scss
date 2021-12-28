@@ -36,6 +36,7 @@
 }
 
 .products__item {
+
     &:hover .products__overlay,
     &:hover .products-overlay__text {
         transform: translateY(0);
@@ -44,6 +45,10 @@
 }
 
 .products__link {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
     &:focus .products__overlay,
     &:focus .products-overlay__text {
         transform: translateY(0);
@@ -52,6 +57,7 @@
 }
 
 .border__wrap {
+    flex-grow: 1;   
     border: 1px solid #eeeeee;
     border-top: 0px;
     padding: 20px 24px;
