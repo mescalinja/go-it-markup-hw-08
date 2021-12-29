@@ -1,5 +1,10 @@
 .we-do.section {
+    display: none;
     padding-top: 0px;
+
+    @media screen and (min-width:1200px) {
+        
+    }
 }
 
 .we-do__title {
@@ -18,9 +23,9 @@
 }
 
 .we-do__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc(100% / 3 - 30px);
 
-    :not(:last-child) {
+    &:not(:last-child) {
         margin-right: 30px;
     }
 }
@@ -33,7 +38,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 370px;
+    width: 100%;
     height: 70px;
 
     display: flex;

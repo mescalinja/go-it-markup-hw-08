@@ -1,6 +1,5 @@
 .clients__title {
     margin-bottom: 30px;
-
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
@@ -10,7 +9,6 @@
 
     @media screen and (min-width:1200px) {
         margin-bottom: 50px;
-
         font-size: 36px;
     }
 }
@@ -27,6 +25,7 @@
 }
 
 .clients__item {
+    width: 100%;
     display: flex;
     flex-basis: calc(100% / 2 - 30px);
     justify-content: center;
@@ -35,10 +34,13 @@
 
     @media screen and (min-width:768px) {
         flex-basis: calc(100% / 3 - 30px);
+
+        &:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
     }
 
     @media screen and (min-width:1200px) {
-
         &:not(:last-child) {
             margin-right: 30px;
     }
