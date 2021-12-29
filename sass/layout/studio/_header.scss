@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     border-bottom: 1px solid #ececec;
 }
 
@@ -21,6 +23,8 @@
 
 
 .header__nav {
+    display: flex;
+
     @media screen and (min-width:768px) {
     display: flex;
     margin-right: auto;
@@ -118,6 +122,18 @@
 .tel__icon {
     margin-right: 10px;
     fill: currentColor;
+}
+
+.open-menu__btn {
+    display: block;
+    margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .mob-menu {
@@ -232,6 +248,7 @@
     }
 }
 
+.open-menu__icon,
 .close-menu__icon {
     fill: currentColor;
     &:focus,

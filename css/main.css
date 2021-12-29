@@ -250,6 +250,7 @@ body {
 
 /* ```````````````STUDIO````````````` */
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -269,6 +270,10 @@ body {
     display: flex;
     align-items: center;
   }
+}
+
+.header__nav {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -362,6 +367,19 @@ body {
 .tel__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.open-menu__btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu__btn {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -460,11 +478,14 @@ body {
   color: var(--accent-color);
 }
 
+.open-menu__icon,
 .close-menu__icon {
   fill: currentColor;
 }
 
-.close-menu__icon:focus, .close-menu__icon:hover {
+.open-menu__icon:focus, .open-menu__icon:hover,
+.close-menu__icon:focus,
+.close-menu__icon:hover {
   color: var(--accent-color);
 }
 
