@@ -1,11 +1,9 @@
 .we-do.section {
-    display: none;
-    padding-top: 0px;
-
-    @media screen and (min-width:1200px) {
-        
+    @media screen and (max-width: 1199px) {
+        display: none;
     }
 }
+
 
 .we-do__title {
     margin-bottom: 50px;
