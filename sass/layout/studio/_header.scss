@@ -77,7 +77,6 @@
 .header-contact__list {
     display: none;
 
-
     @media screen and (min-width: 768px) {
         display: block;
         
@@ -137,6 +136,8 @@
     margin-right: 10px;
     fill: currentColor;
 }
+
+// ------------- MOB MENU
 
 .open-menu__btn {
     display: block;
