@@ -885,12 +885,6 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 399px) {
-  .clients__item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .clients__item {
     flex-basis: calc(100% / 3 - 30px);
