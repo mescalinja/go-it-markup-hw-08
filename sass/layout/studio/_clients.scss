@@ -27,10 +27,17 @@
 .clients__item {
     width: 100%;
     display: flex;
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+
+
+    @media screen and (min-width: 399px) {
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
 
     @media screen and (min-width:768px) {
         flex-basis: calc(100% / 3 - 30px);
@@ -38,6 +45,7 @@
         &:not(:nth-child(3n)) {
             margin-right: 30px;
         }
+
     }
 
     @media screen and (min-width:1200px) {
