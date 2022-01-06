@@ -1331,8 +1331,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .sign-up__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up__block {
+    display: block;
   }
 }
 
@@ -1375,6 +1384,7 @@ body {
 
 .sign-up__label {
   width: 100%;
+  justify-content: center;
 }
 
 .sign-up__input {
@@ -1408,6 +1418,12 @@ body {
 
 .sign-up__input:focus::placeholder {
   color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .sign-up__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
