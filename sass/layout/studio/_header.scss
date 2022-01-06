@@ -151,17 +151,6 @@
 
 // ------------- MOB MENU
 
-.open-menu__btn {
-    display: block;
-    margin-left: auto;
-
-    border: none;
-    background-color: transparent;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
 
 .mob-menu {
     @media screen and (max-width: 767px) {    
@@ -186,7 +175,6 @@
     }
 }
     @media screen and (min-width: 768px) {
-        pointer-events: none;
         display: none;
     }
 }
@@ -195,6 +183,25 @@
     visibility: 0;
     opacity: 0;
 
+    pointer-events: none;
+}
+
+.open-menu__btn {
+    display: block;
+    margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &:hover+.open-menu__icon,
+    &:focus+.open-menu__icon {
+        fill: var(--accent-color);
+    }
 }
 
 .close-menu__btn {
@@ -203,6 +210,23 @@
 
     border: none;
     background-color: transparent;
+    color: var(--secondary-color);
+
+    &:hover+.close-menu__icon,
+    &:focus+.close-menu__icon {
+        fill: var(--accent-color);
+    }
+}
+
+.open-menu__icon,
+.close-menu__icon {
+    fill: currentColor;
+    transition: fill var(--transition-time) var(--cubic);
+
+    &:focus,
+    &:hover {
+        fill: var(--accent-color);
+    }
 }
 
 
@@ -281,13 +305,4 @@
     
 }
 
-.open-menu__icon,
-.close-menu__icon {
-    fill: currentColor;
-    transition: fill var(--transition-time) var(--cubic);
 
-    &:focus,
-    &:hover {
-    fill: var(--accent-color);
-    }   
-}
