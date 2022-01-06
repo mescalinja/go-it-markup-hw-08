@@ -425,10 +425,12 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: 999;
+    pointer-events: none;
     padding-top: 10px;
     padding-bottom: 48px;
     padding-left: 40px;
     background-color: var(--primary-color);
+    transition: opacity var(--transition-time) var(--cubic);
   }
   .mob-menu.container {
     display: flex;
@@ -447,11 +449,6 @@ body {
 .mob-menu.is-hidden {
   visibility: 0;
   opacity: 0;
-}
-
-.mob-menu {
-  transition: opacity var(--transition-time) var(--cubic);
-  pointer-events: none;
 }
 
 .close-menu__btn {
