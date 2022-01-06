@@ -244,6 +244,14 @@
     }
 }
 
+.mob-contacts-tel__link {
+    font-weight: 500;
+    font-size: 8vw;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
 .mob-contacts-mail__link {
     font-weight: 500;
     font-size: 24px;
@@ -252,13 +260,6 @@
     color: var(--third-color);
 }
 
-.mob-contacts-tel__link {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: calc(28 / 24);
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
 
 .mob-social__list {
     display: flex;
