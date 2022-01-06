@@ -144,9 +144,11 @@
     }
 }
 
+
+
 .terms__check {
     font-size: 12px;
-    line-height: calc(14px / 12px);
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
 
     display: flex;
@@ -175,7 +177,7 @@
 
 .terms__link {
     font-size: 12px;
-    line-height: calc(14px / 12px);
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
 
 
@@ -200,6 +202,12 @@
 
 
 .modal__check {
+&:focus {
+    .terms__check span {
+        border: var(--accent-color);
+    }
+}
+
     &:checked+.terms__check span {
         background-color: var(--accent-color);
         border: none;
@@ -208,8 +216,6 @@
         fill: var(--primary-color);
     }
 }
-
-
 
 .submit__btn {
     margin: auto auto;
@@ -242,7 +248,7 @@
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        fill: var(--accent-color);
     }
     
 }
