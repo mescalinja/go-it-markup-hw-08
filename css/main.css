@@ -972,7 +972,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 98%;
+  min-width: 90%;
   min-height: 509px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
@@ -1135,8 +1135,8 @@ body {
   transition: fill var(--transition-time) var(--cubic);
 }
 
-.modal__check:focus .terms__check span {
-  border: var(--accent-color);
+.modal__check:focus + .terms__check span {
+  border-color: var(--accent-color);
 }
 
 .modal__check:checked + .terms__check span {
@@ -1172,9 +1172,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   fill: currentColor;
+  transition: fill var(--transition-time) var(--cubic) .modal-close__icon;
 }
 
-.modal-close__icon:hover, .modal-close__icon:focus {
+.modal-close__icon :hover, .modal-close__icon:focus {
   fill: var(--accent-color);
 }
 

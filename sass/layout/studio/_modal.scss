@@ -27,7 +27,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 98%;
+    min-width: 90%;
     min-height: 509px;
 
     padding: 40px;
@@ -149,8 +149,6 @@
     }
 }
 
-
-
 .terms__check {
     font-size: 12px;
     line-height: calc(14 / 12);
@@ -205,13 +203,10 @@
     transition: fill var(--transition-time) var(--cubic);
 }
 
-
 .modal__check {
-&:focus {
-    .terms__check span {
-        border: var(--accent-color);
+    &:focus+.terms__check span {
+        border-color: var(--accent-color);
     }
-}
 
     &:checked+.terms__check span {
         background-color: var(--accent-color);
@@ -250,10 +245,10 @@
     transform: translate(-50%, -50%);
 
     fill: currentColor;
+    transition: fill var(--transition-time) var(--cubic)
 
     &:hover,
     &:focus {
         fill: var(--accent-color);
     }
-    
 }
