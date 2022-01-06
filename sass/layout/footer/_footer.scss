@@ -13,20 +13,22 @@
     justify-content: space-between;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
         align-items: baseline;
     }
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
     }
 }
 
+.footer-top {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
 
 .footer-address__block {
     margin-left: auto;

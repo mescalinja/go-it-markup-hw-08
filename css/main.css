@@ -1190,8 +1190,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer__container {
-    display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
   }
 }
@@ -1199,9 +1197,14 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-top {
+    display: flex;
     align-items: baseline;
   }
 }
@@ -1574,6 +1577,12 @@ body {
   top: 0;
   left: 0;
   background-color: var(--overlay-color);
+}
+
+@media screen and (max-width: 767px) {
+  .products__overlay {
+    overflow-y: scroll;
+  }
 }
 
 .products-overlay__text {
