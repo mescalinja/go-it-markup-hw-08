@@ -417,10 +417,6 @@ body {
   }
 }
 
-.mob-menu {
-  pointer-events: none;
-}
-
 @media screen and (max-width: 767px) {
   .mob-menu {
     position: fixed;
