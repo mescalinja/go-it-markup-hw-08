@@ -193,11 +193,12 @@
 .mob-menu.is-hidden {
     visibility: 0;
     opacity: 0;
-    pointer-events: none;
+
 }
 
 .mob-menu {
     transition: opacity var(--transition-time) var(--cubic);
+    pointer-events: none;
 }
 
 .close-menu__btn {
